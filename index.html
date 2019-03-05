@@ -1,19 +1,15 @@
-<html>
-
+<html lang="en">
 <head>
-    <title>Meea EV's</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meera EV's</title>
     <style>
-
-        #section1{
+    #section1{
             margin: 0;
             padding: 0;
             position: relative;
@@ -32,15 +28,11 @@
         #vslit{
             position: absolute;
             bottom: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
-       #wallpaper{
-           background: url('saveenvironment.jpg');
-           min-height: 90vh;
-           position: relative;
-           background-size: cover;
-       }
-
-       .bigHr {
+        .bigHr {
             background-color: black !important;
             color: black !important;
             border: solid 2px black !important;
@@ -48,40 +40,52 @@
             width: 100px !important;
             border-radius: 100px;
         }
-    </style>
+        .smallHr {
+            background-color: red !important;
+            color: red !important;
+            border: solid 2px red !important;
+            height: 1px !important;
+            width: 50px !important;
+            border-radius: 100px;
+        }
+        </style>
 </head>
 
 <body>
-
     <div class="navbar-fixed">
         <nav class="white">
             <div class="nav-wrapper">
                 <div class="container">
-                    <a href="#!" class="brand-logo black-text">Meera <span class="green-text text-darken-1">EV's</span></a>
+                    <img src="logo.png" width="50px;" height="55px;" style="padding-top:5px;">
+                    <a href="index.html" class="brand-logo black-text">&nbsp;Meera<span class="green-text text-darken-1"> EV's</span></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
                             class="material-icons green-text">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="sass.html" class="green-text text-darken-1">Bikes</a></li>
-                        <li><a href="badges.html" class="green-text text-darken-1">Services</a></li>
-                        <li><a href="collapsible.html" class="green-text text-darken-1">Contacts</a></li>
+                        <li><a href="#bikes" class="green-text text-darken-1">Bikes</a></li>
+                        <li><a href="#services" class="green-text text-darken-1">Services</a></li>
+                        <li><a href="#loan" class="green-text text-darken-1">Loan</a></li>
+                        <li><a href="#adventure" class="green-text text-darken-1">Adventure</a></li>
+                        <li><a href="#section2" class="green-text text-darken-1">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <a class="btn-floating halfway-fab waves-effect pulse waves-light black"><i class="material-icons">call</i></a>
-    </div>    
+        <a class="btn-floating halfway-fab waves-effect pulse waves-light black" href="tel:+919403864418" style="position: fixed; top:42px;"><i class="material-icons">call</i></a>
+    </div>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Bikes</a></li>
-        <li><a href="badges.html">Services</a></li>
-        <li><a href="collapsible.html">Contacts</a></li>
+        <li><a href="index.html" class="green-text text-darken-1">Home</a></li>
+        <li><a href="#bikes" class="green-text text-darken-1">Bikes</a></li>
+        <li><a href="#services" class="green-text text-darken-1">Services</a></li>
+        <li><a href="#loan" class="green-text text-darken-1">Loan</a></li>
+        <li><a href="#adventure" class="green-text text-darken-1">Adventure</a></li>
+        <li><a href="#section2" class="green-text text-darken-1">Contacts</a></li>
     </ul>
-
-    <section id="section1">
-        <div class="container">
-            <div class="row" style="padding-top: 30px;">
+    <div id="section1">
+        <div class="container scrollspy">
+            <div class="row">
                 <div class="col s12 center">
-                    <h3 class="white-text text-darken-2">Welcome to Meera EV's</h3>
-                    <hr class="bigHr"/>
+                    <h3 class="white-text text-darken-2" style="padding-top: 10px;">Welcome to Meera EV's</h3>
+                    <hr class="bigHr" />
                 </div>
             </div>
             <br>
@@ -90,14 +94,16 @@
                     <img src="okinawalogo.png" class="responsive-img" alt="">
                 </div>
                 <div class="col l7 s12 offset-l1 center hide-on-med-and-down">
-                    <p>Okinawa Autotech Pvt. Ltd. is a 100% Indian electric two wheeler manufacturing company that was established in 2015 with
-                    a mission to create two wheelers that can drive our present towards a sustainable future.</p>
+                    <mark>India's 1st Japanese Technology Electric 2 Wheeler</mark>
+                    <p>Okinawa Autotech Pvt. Ltd. is a 100% Indian electric two wheeler manufacturing company that was
+                        established in 2015 with
+                        a mission to create two wheelers that can drive our present towards a sustainable future.</p>
                     <h4 style="color:#e50000;">WE ARE AUTHORISED DEALER</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 center" style="padding-top: 20px;">
-                    <a class="waves-effect black waves-light btn">Get Quotation</a>
+                <div class="col s12 center" style="padding-top: 10px;">
+                    <a href="quotation.docx" download class="waves-effect black waves-light btn">Get Quotation</a>
                 </div>
             </div>
         </div>
@@ -111,155 +117,224 @@
             <polyline class="st0" points="0 0 550 0 600 60 650 0 1400 0 1400 60 0 60" />
             <path class="st0" d="M239,366" />
         </svg>
-    </section>
+    </div>
+    <section class="section scrollspy" id="bikes">
+        <div class="container" id="accent-1">
+            <div class="row">
+                <div class="col s12 center">
+                    <h3 class="light-green-text text-accent-4">PRODUCT LINE UP</h3>
+                    <hr class="bigHr" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l7 s12">
+                    <img src="ridge.png" class="responsive-img" alt="">
+                </div>
+                <div class="col l4 s12 offset-l1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
 
-    <section class="section container">
-        <div class="row">
-            <div class="col s12 center">
-                <h3 class="light-green-text text-accent-4">PRODUCT LINE UP</h3>
-                <hr class="bigHr" />
+                        <tbody>
+                            <tr>
+                                <td>Range</td>
+                                <td>80-90<sup>*</sup> km/per charge</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>800 Watt</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>55 km/hr (Max)</td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                                <td>4-6 Hours<sup>*</sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="row valign-wrapper">
-            <div class="col s6">
-                <img src="ridge.png" class="responsive-img" alt="">
-            </div>
-            <div class="col s4 offset-s1">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Features</th>
-                            <th>Values</th>
-                        </tr>
-                    </thead>
+            <div class="row hide-on-large-only">
+                <div class="col s12">
+                    <img src="ridgeplus.png" class="responsive-img" alt="">
+                </div>
+                <div class="col s12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr>
+                                <td>Range</td>
+                                <td>90-100<sup>*</sup> km/per charge</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>800 Watt</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>55 km/hr<sup>*</sup></td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                                <td>2-3 Hours<sup>*</sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
-                    <tbody>
-                        <tr>
-                            <td>Range</td>
-                            <td>80-90<sup>*</sup> km/per charge</td>
-                        </tr>
-                        <tr>
-                            <td>Battery</td>
-                            <td>800 Watt</td>
-                        </tr>
-                        <tr>
-                            <td>Speed</td>
-                            <td>55 km/hr (Max)</td>
-                        </tr>
-                        <tr>
-                            <td>Charge Time</td>
-                            <td>4-6 Hours<sup>*</sup></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
-        </div>
-        <div class="row valign-wrapper">
-            <div class="col s4 offset-s1">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Features</th>
-                            <th>Values</th>
-                        </tr>
-                    </thead>
+            <div class="row hide-on-med-and-down">
+                <div class="col l4">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Range</td>
+                                <td>90-100<sup>*</sup> km/per charge</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>800 Watt</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>55 km/hr<sup>*</sup></td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                                <td>2-3 Hours<sup>*</sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col l7 offset-l1">
+                    <img src="ridgeplus.png" class="responsive-img" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l7">
+                    <img src="praise.png" class="responsive-img" alt="">
+                </div>
+                <div class="col s12 l4 offset-l1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Range</td>
+                                <td>170-200<sup>*</sup> km/per charge</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>1000 Watt</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>75 km/hr (Max)</td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                                <td>6-8 Hours<sup>*</sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row hide-on-large-only">
+                <div class="col s12">
+                    <img src="ipraise.png" class="responsive-img" alt="">
+                </div>
+                <div class="col s12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Range</td>
+                                <td>160-180<sup>*</sup> km/per charge</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>1000 Watt</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>75 km/hr (Max)</td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                                <td>2-3 Hours<sup>*</sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row hide-on-med-and-down">
+                <div class="col l4">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
             
-                    <tbody>
-                        <tr>
-                            <td>Range</td>
-                            <td>90-100<sup>*</sup> km/per charge</td>
-                        </tr>
-                        <tr>
-                            <td>Battery</td>
-                            <td>800 Watt</td>
-                        </tr>
-                        <tr>
-                            <td>Speed</td>
-                            <td>55 km/hr<sup>*</sup></td>
-                        </tr>
-                        <tr>
-                            <td>Charge Time</td>
-                            <td>2-3 Hours<sup>*</sup></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col s6">
-                <img src="ridgeplus.png" class="responsive-img" alt="">
-            </div>
-            
-        </div>
-        <div class="row valign-wrapper">
-            <div class="col s6">
-                <img src="praise.png" class="responsive-img" alt="">
-            </div>
-            <div class="col s4 offset-s1">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Features</th>
-                            <th>Values</th>
-                        </tr>
-                    </thead>
-            
-                    <tbody>
-                        <tr>
-                            <td>Range</td>
-                            <td>170-200<sup>*</sup> km/per charge</td>
-                        </tr>
-                        <tr>
-                            <td>Battery</td>
-                            <td>1000 Watt</td>
-                        </tr>
-                        <tr>
-                            <td>Speed</td>
-                            <td>75 km/hr (Max)</td>
-                        </tr>
-                        <tr>
-                            <td>Charge Time</td>
-                            <td>6-8 Hours<sup>*</sup></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row valign-wrapper">
-            <div class="col s4 offset-s1">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Features</th>
-                            <th>Values</th>
-                        </tr>
-                    </thead>
-            
-                    <tbody>
-                        <tr>
-                            <td>Range</td>
-                            <td>160-180<sup>*</sup> km/per charge</td>
-                        </tr>
-                        <tr>
-                            <td>Battery</td>
-                            <td>1000 Watt</td>
-                        </tr>
-                        <tr>
-                            <td>Speed</td>
-                            <td>75 km/hr (Max)</td>
-                        </tr>
-                        <tr>
-                            <td>Charge Time</td>
-                            <td>2-3 Hours<sup>*</sup></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col s6">
-                <img src="ipraise.png" class="responsive-img" alt="">
+                        <tbody>
+                            <tr>
+                                <td>Range</td>
+                                <td>160-180<sup>*</sup> km/per charge</td>
+                            </tr>
+                            <tr>
+                                <td>Battery</td>
+                                <td>1000 Watt</td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td>75 km/hr (Max)</td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                                <td>2-3 Hours<sup>*</sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col l7 offset-l1">
+                    <img src="ipraise.png" class="responsive-img" alt="">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="section2">
+    <section id= "section2" class="section scrollspy">
         <div class="container">
             <div class="row" style="padding-top: 30px;">
                 <div class="col s12 center">
@@ -269,14 +344,14 @@
             </div>
             <br><br>
             <div class="row">
-                <div class="col s4 center"><i class="white-text fa fa-4x fa-phone" aria-hidden="true"></i></div>
-                <div class="col s4 center"><i class="white-text fa fa-4x fa-whatsapp" aria-hidden="true"></i></div>
-                <div class="col s4 center"><i class="white-text fa fa-4x fa-map-marker" aria-hidden="true"></i></div>
+                <div class="col s4 center"><a href="tel:+919403864418"><i class="white-text fa fa-4x fa-phone" aria-hidden="true"></i></a></div>
+                <div class="col s4 center"><a href="https://api.whatsapp.com/send?text=How%20can%20we%20help%20you?%0D%0A&phone=+91940386441https://goo.gl/maps/TwVFAyLEacG28"><i class="white-text fa fa-4x fa-whatsapp" aria-hidden="true"></i></a></div>
+                <div class="col s4 center"><a href="https://goo.gl/maps/TwVFAyLEacG2"><i class="white-text fa fa-4x fa-map-marker" aria-hidden="true"></i></a></div>
             </div>
             <div class="row">
-                <div class="col s4 center">Call Us</div>
-                <div class="col s4 center">WhatsApp Us</div>
-                <div class="col s4 center">Visit Us</div>
+                <div class="col s4 center"><a href="tel:+919403864418" class="white-text">Call Us</a></div>
+                <div class="col s4 center"><a href="https://api.whatsapp.com/send?text=How%20can%20we%20help%20you?%0D%0A&phone=+91940386441https://goo.gl/maps/TwVFAyLEacG28" class="white-text">WhatsApp Us</a></div>
+                <div class="col s4 center"><a href="https://goo.gl/maps/TwVFAyLEacG2" class="white-text">Visit Us</a></div>
             </div>
         </div>
         <svg version="1.1" id="vslit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -290,47 +365,129 @@
             <path class="st0" d="M239,366" />
         </svg>
     </section>
-
-    <div class="container">
-        <div class="row" style="padding-top: 30px;">
-            <div class="col s12 center">
-                <h3 class="light-green-text text-accent-4">Performance</h3>
-                <hr class="bigHr" />
+    <section class="section scrollspy" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h3 class="light-green-text text-accent-4">Our Services</h3>
+                    <hr class="bigHr" />
+                </div>
+                <div class="col s12">
+                    <ul class="collapsible">
+                        <li class="active green-text">
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>Sales</div>
+                            <div class="collapsible-body"><span>All four type of model are available for sale in any required quantity.</span></div>
+                        </li>
+                        <li class="red-text">
+                            <div class="collapsible-header"><i class="material-icons">place</i>Spare Parts</div>
+                            <div class="collapsible-body"><span>All spare parts of each model are available or can be made available in bit amount of time.</span></div>
+                        </li>
+                        <li class="blue-text">
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>After Sales Support</div>
+                            <div class="collapsible-body"><span>Full support regarding any issue will be provided after sales whenever required on site or at Showroom.</span></div>
+                        </li>
+                        <li class="yellow-text text-darken-2">
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>Servicing</div>
+                            <div class="collapsible-body"><span>Servicing facility is available at minimum cost in showroom itself.</span></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img src="okinawawallpaper2.jpg" width="100%"></div>
     </div>
-
-        <div class="parallax-container">
-            <div class="parallax"><img src="okinawawallpaper2.jpg"></div>
-        </div>
-        <div class="section white">
-            <div class="row container">
-                <h2 class="header">'Praise De Himalaya'</h2>
-                <p class="grey-text text-darken-3 lighten-3">Okinawa becomes the first electric two-wheeler brand to take its e-scooter to Khardung La Pass, one of the highest
-                motorable roads, which is at a height of 18,380 feet.<br><br>Jeetender Sharma, Managing Director, Okinawa Autotech said,
-                <blockquote>The 'Praise De Himalaya' campaign is the first and one-of-its-kind journey of an e-scooter to an extremely high-altitude
-                zone where it is very difficult to attempt two-wheeler expeditions. While many apprehensions were raised on Praise's
-                ability to complete such a difficult journey, we at Okinawa were confident of our vehicle's capabilities to complete the
-                trip successfully.</blockquote>
-                Okinawa claims that this trip helped them test the Praise e-Scooter's suspension, ergonomics, engine power, and
-                load-taking capacity comprehensively in such harsh conditions, and the scooter showed little signs of wear and tear even
+    <section class="section scrollspy" id="adventure">
+        <div class="row container">
+            <h2 class="light-green-text text-accent-4 center">'Praise De Himalaya'</h2>
+            <hr class="bigHr" />
+            <p class="grey-text text-darken-3 lighten-3">Okinawa becomes the first electric two-wheeler brand to take its
+                e-scooter to Khardung La Pass, one of the highest
+                motorable roads, which is at a height of 18,380 feet.<br><br>Jeetender Sharma, Managing Director, Okinawa
+                Autotech said,
+                <blockquote>The 'Praise De Himalaya' campaign is the first and one-of-its-kind journey of an e-scooter to an
+                    extremely high-altitude
+                    zone where it is very difficult to attempt two-wheeler expeditions. While many apprehensions were raised
+                    on Praise's
+                    ability to complete such a difficult journey, we at Okinawa were confident of our vehicle's capabilities
+                    to complete the
+                    trip successfully.</blockquote>
+                Okinawa claims that this trip helped them test the Praise e-Scooter's suspension, ergonomics, engine power,
+                and
+                load-taking capacity comprehensively in such harsh conditions, and the scooter showed little signs of wear
+                and tear even
                 after the completion of the trip.
             </p>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img src="okinawawallpaper.jpg"></div>
+    </div>
+    <section class="section scrollspy" id="loan">
+        <div class="container" >
+            <div class="row">
+                <div class="col s12 center">
+                    <h3 class="light-green-text text-accent-4">Loan Documents</h3>
+                    <hr class="bigHr" />
+                </div>
+                <div class="col s12">
+                    <p class="center">HDFC Bank Loan will be provided at showroom itself. <br>However, customer is free to take loan from any bank as per his/her convience.</p>
+                    <ul class="collection with-header">
+                        <li class="collection-item">Aadhar Card</li>
+                        <li class="collection-item">PAN Card</li>
+                        <li class="collection-item">Light Bill</li>
+                        <li class="collection-item">IT Return / Salary Slip</li>
+                        <li class="collection-item">Bank Statement - 6 Months</li>
+                        <li class="collection-item">2 Cheque</li>
+                        <li class="collection-item">2 Passport Size Photo</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="parallax-container">
-            <div class="parallax"><img src="okinawawallpaper.jpg"></div>
+    </section>
+    <footer class="scrollspy page-footer light-green accent-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12 center">
+                    <h5 class="black-text">Find Us Here</h5>
+                    <hr class="smallHr"/>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15022.968407742652!2d73.6306064!3d19.7236011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f738e5ad6646f64!2sMeera+EV&#39;s!5e0!3m2!1sen!2sin!4v1551714972715"
+                        width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <p class="black-text">Shop no. 1, Opp.Mulchand Bhai Gothi Garden, Sinner Fata, Ghoti - 422402</p>
+                </div>
+                <div class="col l5 offset-l1 black-text  s12 ">
+                    <h5 class="black-text center">Contact Us</h5>
+                    <hr class="smallHr" />
+                    <br>
+                    <h5>MEERA EV'S</h5>
+                    <small>AUTHORISED SHOWROOM - OKINAWA SCOOTERS<br>(SALES,SERVICES,SPARES)</small>
+                    <p>Pratiksha Hemant Chitte<br><small>Proprietor</small></p>
+                    
+                    <a href="tel:+919403864418"> <p class="black-text"><i class="material-icons red-text">call</i> +91 9403864418</p></a> 
+                    <a href="mailto:meeraevs@gmail.com?&subject=Customer%20Query&body=How%20can%20we%20help%20you?"><p class="black-text"><i class="material-icons red-text">mail</i> meeraevs@gmail.com</p></a>
+                </div>
+            </div>
         </div>
+        <div class="footer-copyright">
+            <div class="container grey-text text-darken-4">
+                <span class="hide-on-med-and-down">Meera EV's</span>
+                <a class="grey-text text-darken-2 right" href="#!">Designed and Developed By <span class="grey-text text-darken-4">Yash Kumat</span></a>
+            </div>
+        </div>
+    </footer>   
 
-    <!--JavaScript at end of body for optimized loading-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
             $('.parallax').parallax();
+            $('.collapsible').collapsible();
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>
-
 </html>
